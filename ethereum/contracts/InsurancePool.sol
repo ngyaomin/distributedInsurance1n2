@@ -91,7 +91,7 @@ contract InsurancePool {
         claim.claimer.transfer(claim.value);
 
     }
-    
+
     function getDetail() public view returns (
       uint, uint, uint, uint, address
       ) {
@@ -103,7 +103,7 @@ contract InsurancePool {
           manager
         );
     }
-    
+
     function getClaimsCount() public view returns (uint) {
       return claims.length;
     }
