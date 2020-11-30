@@ -27,9 +27,9 @@ contract InsurancePool {
 
     Claim[] public claims;
     address public manager;
-    uint public minimumPremium;
+    uint public minimumPremium; // cant use 8 cause can get quite big
     mapping(address => bool) public validators;
-    uint public validatorsCount;
+    uint8 public validatorsCount;
 
     modifier restricted() {
         require(msg.sender == manager);
@@ -95,7 +95,8 @@ contract InsurancePool {
     }
 
     function getDetail() public view returns (
-      uint, uint, uint, uint, address
+      uint, uint, uint, uint8, address // here the uint8 is in this place as this
+      // relates to an array and so need to be in certain order for display frontend to be right
       ) {
         return (
           minimumPremium,
