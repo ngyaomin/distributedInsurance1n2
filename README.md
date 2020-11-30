@@ -1,4 +1,5 @@
 # DCInsurance1n2
+//SPDX-License-Identifier: UNLICENSED
 use truffle 4. truffle 5 and above have too many conflict issues.
 run npm install.
 do not run npm audit and or audit fix. this will create more issues.
