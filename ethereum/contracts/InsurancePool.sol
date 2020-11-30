@@ -14,12 +14,14 @@ contract InsurancePoolFactory {
 }
 
 contract InsurancePool {
+
     struct Claim {
+        uint8 validatorCount; // for control we will allow pool max to reach 100? max here 255 uint8
+        uint value; // since wei is in value which can get quite big, i have no idea how big it will get
         string description;
-        uint value;
         address claimer;
         bool complete;
-        uint validatorCount;
+
         mapping(address => bool) validates;
     }
 

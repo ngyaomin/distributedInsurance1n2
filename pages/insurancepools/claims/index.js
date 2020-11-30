@@ -6,6 +6,7 @@ import InsurancePool from '../../../ethereum/insurancePool';
 import ClaimRow from '../../../components/ClaimRow';
 
 class ClaimIndex extends Component {
+  
   static async getInitialProps(props) {
     const { address } = props.query;
     const insurancePool = InsurancePool(address);
