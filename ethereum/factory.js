@@ -1,10 +1,12 @@
 import web3 from './web3'; // we are getting the instance from web3.js not the constructor
 import InsurancePoolFactory from  './build/InsurancePoolFactory.json';
-require('dotenv').config();
-const { deployedTo } = process.env;
+const fs = require('fs');
+//const deployedTo = fs.readFileSync(".deployedTo").toString().trim();
+
 
 const instance = new web3.eth.Contract(
   JSON.parse(InsurancePoolFactory.interface),
+  //deployedTo
   '0xE776D98A50b28a91F6EAA57272815922d818c02E'
   //'0x675eA93065Db6f6A3e60AF77a50937b52529BEE3'
   //'0x935A6A54cB1ff4E4fBA2E4fe3e6afce51138D155'

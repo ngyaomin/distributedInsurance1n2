@@ -1,4 +1,5 @@
 pragma solidity ^0.4.17;
+//pragma solidity ^0.7.5;
 
 contract InsurancePoolFactory {
     address[] public deployedInsurancePools;
