@@ -3,6 +3,7 @@ import { Form, Input, Message, Button } from 'semantic-ui-react';
 import InsurancePool from '../ethereum/insurancePool';
 import web3 from '../ethereum/web3';
 import { Router } from '../routes';
+const Etherscan = require('node-etherscan-api');
 
 class FundForm extends Component {
   state = {

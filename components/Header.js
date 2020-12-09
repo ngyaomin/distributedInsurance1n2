@@ -44,7 +44,7 @@ export default class ThisComponent extends Component {
       <div className="item">
         <textarea
         ref={(textarea) => this.textArea = textarea}
-        value="0xa85A05887Ae1f8f4Ce2Ce102c20d4aAFD1273981"
+        value="0xa85A05887Ae1f8f4Ce2Ce102c20d4aAFD1273981" // this my public key pls copy and send $ to me thanks
         />
       </div>
         <Menu.Menu position="right">
