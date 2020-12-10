@@ -18,10 +18,18 @@ class InsurancePoolIndex extends Component {
       const items = this.props.insurancePools.map(address => {
         return {
           header: address,
-          description: ( 
-            <Link route={`/insurancepools/${address}`}>
-              <a>View Insurance Pool</a>
-            </Link>
+          description: (
+            <div>
+            <i class="hand point right outline icon"></i>
+              <Link route={`/insurancepools/${address}`}>
+                <a><b><mark>View Insurance Pool</mark></b></a>
+              </Link>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i class="ethereum icon"></i>
+              <Link route={`https://rinkeby.etherscan.io/address/${address}`}>
+                <a target="_blank">View in Ether Scan</a>
+              </Link>
+            </div>
         ),
           fluid: true
         };
