@@ -4,8 +4,8 @@ pragma solidity ^0.4.17;
 contract InsurancePoolFactory {
     address[] public deployedInsurancePools;
 
-    function createInsurancePool(uint minimum) public {
-        address newInsurancePool= new InsurancePool(minimum, msg.sender);
+    function createInsurancePool(uint minimum, string document) public {
+        address newInsurancePool= new InsurancePool(minimum, msg.sender, document);
         deployedInsurancePools.push(newInsurancePool);
     }
 
@@ -29,6 +29,8 @@ contract InsurancePool {
     Claim[] public claims;
     address public manager;
     uint public minimumPremium; // cant use 8 cause can get quite big
+    string public documentHash; // for now we store it as a string first, later when
+    // automated this will be store as a hash
     mapping(address => bool) public validators;
     uint8 public validatorsCount;
 
@@ -47,9 +49,10 @@ contract InsurancePool {
         _;
     }
 
-    function InsurancePool(uint minimum, address creator) public {
+    function InsurancePool(uint minimum, address creator, string document) public {
         manager = creator;
         minimumPremium = minimum;
+        documentHash = document;
     }
 
     function fund() public fundRestricted payable {
@@ -96,7 +99,7 @@ contract InsurancePool {
     }
 
     function getDetail() public view returns (
-      uint, uint, uint, uint8, address // here the uint8 is in this place as this
+      uint, uint, uint, uint8, address, string // here the uint8 is in this place as this
       // relates to an array and so need to be in certain order for display frontend to be right
       ) {
         return (
@@ -104,7 +107,8 @@ contract InsurancePool {
           this.balance,
           claims.length,
           validatorsCount,
-          manager
+          manager,
+          documentHash
         );
     }
 

@@ -18,7 +18,8 @@ class InsurancePoolShow extends Component {
       balance: detail[1],
       claimsCount: detail[2],
       validatorsCount: detail[3],
-      manager: detail[4]
+      manager: detail[4],
+      documentHash: detail[5]
     };
   }
 
@@ -27,6 +28,7 @@ class InsurancePoolShow extends Component {
       balance,
       manager,
       minimumPremium,
+      documentHash,
       claimsCount,
       validatorsCount
     } = this.props;
@@ -57,6 +59,12 @@ class InsurancePoolShow extends Component {
         header: web3.utils.fromWei(balance, 'ether'),
         meta: 'Insurance Pool Balance(ether)',
         description: 'How much fund this pool has left'
+      },
+      {
+        header: documentHash,
+        meta: 'Document Hash',
+        description: 'Hash of Uploaded Documents',
+        style: { overflowWrap: 'break-word' }
       }
     ];
 

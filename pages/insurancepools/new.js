@@ -9,6 +9,7 @@ class InsurancePoolNew extends Component {
   state = {
     minimumPremium: '',
     errorMessage: '',
+    documentHash: '',
     loading: false
   };
 
@@ -21,13 +22,13 @@ class InsurancePoolNew extends Component {
       const accounts = await web3.eth.getAccounts();
 
       await factory.methods
-        .createInsurancePool(this.state.minimumPremium)
+        .createInsurancePool(this.state.minimumPremium, this.state.documentHash)
         .send({
           from: accounts[0]
         });
-      
+
       Router.pushRoute('/');
-      
+
       } catch (err) {
         this.setState({ errorMessage: err.message });
       }
@@ -52,6 +53,15 @@ class InsurancePoolNew extends Component {
               labelPosition="right"
               value ={this.state.minimumPremium}
               onChange={event => this.setState({ minimumPremium: event.target.value })}
+              />
+          </Form.Field>
+          <Form.Field>
+            <label> Document Hashes (will be automated in next upgrade)</label>
+            <Input
+              label="Hash"
+              labelPosition="right"
+              value ={this.state.documentHash}
+              onChange={event => this.setState({ documentHash: event.target.value })}
               />
           </Form.Field>
 
