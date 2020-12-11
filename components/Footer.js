@@ -4,13 +4,12 @@ import { Link } from '../routes';
 
 var style = {
     borderTop: "1px solid #E7E7E7",
-    textAlign: "center",
     padding: "0px",
     position: "fixed",
     left: "0",
     bottom: "35px",
     height: "0px",
-    width: "100%",
+    width: "100%"
 }
 
 export default class ThisComponent extends Component {
