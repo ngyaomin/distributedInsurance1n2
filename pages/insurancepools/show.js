@@ -39,7 +39,8 @@ class InsurancePoolShow extends Component {
         meta: 'Address of manager',
         description: 'Manager create this pool and can create claims on behalf of',
         style: { overflowWrap: 'break-word' }
-      },
+      }
+      ,
       {
         header: minimumPremium,
         meta: 'Minimum Premium in weis',
@@ -79,7 +80,18 @@ class InsurancePoolShow extends Component {
           <Grid.Row>
             <Grid.Column width={10}>
               {this.renderCards()}
-
+              <Grid.Row>
+                &nbsp;
+              </Grid.Row>
+              <Grid.Row>
+                <Grid.Column>
+                  <Link route={`/insurancepools/${this.props.address}/claims`}>
+                    <a>
+                      <Button primary>View Claims</Button>
+                    </a>
+                  </Link>
+                </Grid.Column>
+              </Grid.Row>
             </Grid.Column>
             <Grid.Column width={6}>
               <FundForm address={this.props.address} />
@@ -87,13 +99,7 @@ class InsurancePoolShow extends Component {
           </Grid.Row>
 
           <Grid.Row>
-            <Grid.Column>
-              <Link route={`/insurancepools/${this.props.address}/claims`}>
-                <a>
-                  <Button primary>View Claims</Button>
-                </a>
-              </Link>
-            </Grid.Column>
+            &nbsp;
           </Grid.Row>
         </Grid>
       </Layout>

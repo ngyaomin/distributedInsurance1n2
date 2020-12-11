@@ -2,11 +2,22 @@ import React, { Component } from 'react';
 import { Menu } from 'semantic-ui-react';
 import { Link } from '../routes';
 
+var style = {
+    borderTop: "1px solid #E7E7E7",
+    textAlign: "center",
+    padding: "0px",
+    position: "fixed",
+    left: "0",
+    bottom: "35px",
+    height: "0px",
+    width: "100%",
+}
+
 export default class ThisComponent extends Component {
     render() {
       return (
-        <div id="footer">
-        <Menu style={{ marginTop: '200px' }}>
+        <div style={style}>
+        <Menu>
             <Menu.Menu position="right">
               <Link route="https://github.com/ngyaomin/distributedInsurance1n2">
                 <a className="item" target="_blank">
@@ -15,7 +26,7 @@ export default class ThisComponent extends Component {
                 </a>
               </Link>
             </Menu.Menu>
-            
+
         </Menu>
         </div>
       );
