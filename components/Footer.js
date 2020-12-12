@@ -25,6 +25,14 @@ export default class ThisComponent extends Component {
                 </a>
               </Link>
             </Menu.Menu>
+            <Menu.Menu position="">
+              <Link route="https://drive.google.com/file/d/1_d3yFTCR20hL_GiWs1Zf45bnTTt1uENl/view?usp=sharing">
+                <a className="item" target="_blank">
+                  <i class="google drive icon"></i>
+                  Link to PowerPoint Presentation on Google Drive
+                </a>
+              </Link>
+            </Menu.Menu>
 
         </Menu>
         </div>
