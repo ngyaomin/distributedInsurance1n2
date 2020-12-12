@@ -4,6 +4,8 @@ import { Form, Button, Input, Message } from 'semantic-ui-react';
 import factory from '../../ethereum/factory';
 import web3 from '../../ethereum/web3';
 import  { Router } from '../../routes'; // link not use now, maybe use later, i lazy so put here
+import Uploady from "@rpldy/uploady";
+import UploadButton from  "@rpldy/upload-button";
 
 class InsurancePoolNew extends Component {
   state = {
@@ -45,6 +47,10 @@ class InsurancePoolNew extends Component {
       <Layout>
         <h3>Create a new insurance pool offer</h3>
 
+        <Uploady destination={{url: "https://fakeuploaddrive.fake"}}>
+          <UploadButton/> Upload Supporting Files Here (for demo only real upload server cant afford )
+        </Uploady>
+
         <Form onSubmit={this.onSubmit} error={!!this.state.errorMessage}>
           <Form.Field>
             <label> Minimum Premium</label>
@@ -55,6 +61,7 @@ class InsurancePoolNew extends Component {
               onChange={event => this.setState({ minimumPremium: event.target.value })}
               />
           </Form.Field>
+
           <Form.Field>
             <label> Document Hashes (will be automated in next upgrade)</label>
             <Input

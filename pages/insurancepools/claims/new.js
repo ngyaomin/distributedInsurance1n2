@@ -3,7 +3,9 @@ import { Form, Button, Message, Input } from 'semantic-ui-react';
 import InsurancePool from '../../../ethereum/insurancePool';
 import web3 from '../../../ethereum/web3';
 import { Link, Router } from '../../../routes';
-import Layout from '../../../components/Layout'
+import Layout from '../../../components/Layout';
+import Uploady from "@rpldy/uploady";
+import UploadButton from  "@rpldy/upload-button";
 
 class ClaimNew extends Component {
   state = {
@@ -51,6 +53,11 @@ class ClaimNew extends Component {
           <a>Back</a>
         </Link>
         <h3>Create a new claim request</h3>
+        <Uploady destination={{url: "https://fakeuploaddrive.fake"}}>
+          <UploadButton/> Upload Supporting Files Here (for demo only real upload server cant afford )
+        </Uploady>
+        <br/>
+        <br/>
         <Form onSubmit={this.onSubmit} error={!!this.state.errorMessage}>
           <Form.Field>
             <label>Description</label>
