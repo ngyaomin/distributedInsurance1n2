@@ -42,6 +42,18 @@ class InsurancePoolIndex extends Component {
     return (
       <Layout>
         <div>
+        <h7>We are not rasing any money, we are only accepting donations.
+          <br/ > for more info email &nbsp;
+          <a href="mailto:NG_YAO_MIN01.PT@ICHAT.SP.EDU.SG">
+            <u>givemeyourmoney@cheatyourmoney.io</u>
+          </a>
+          <br/ >
+          you can also see our latest smart contract
+          <br/ >
+          <a target="_blank" href="https://rinkeby.etherscan.io/address/0xc7A9e3Eac2dA6a5D1Dd5a6058a8b0DC530c5f41A">
+          '0xc7A9e3Eac2dA6a5D1Dd5a6058a8b0DC530c5f41A'
+          </a>
+        </h7>
           <h3>Open Insurance Pools</h3>
 
           <Link route="/insurancepools/new">
