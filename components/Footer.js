@@ -7,7 +7,7 @@ var style = {
     padding: "0px",
     position: "fixed",
     left: "0",
-    bottom: "35px",
+    bottom: "50px",
     height: "0px",
     width: "100%"
 }
@@ -17,7 +17,7 @@ export default class ThisComponent extends Component {
       return (
         <div style={style}>
         <Menu>
-            <Menu.Menu position="right">
+            <Menu.Menu position="left">
               <Link route="https://github.com/ngyaomin/distributedInsurance1n2">
                 <a className="item" target="_blank">
                   <i class="github icon"></i>
@@ -25,7 +25,7 @@ export default class ThisComponent extends Component {
                 </a>
               </Link>
             </Menu.Menu>
-            <Menu.Menu position="">
+            <Menu.Menu position="left">
               <Link route="https://drive.google.com/file/d/1_d3yFTCR20hL_GiWs1Zf45bnTTt1uENl/view?usp=sharing">
                 <a className="item" target="_blank">
                   <i class="google drive icon"></i>
@@ -33,6 +33,15 @@ export default class ThisComponent extends Component {
                 </a>
               </Link>
             </Menu.Menu>
+            <Menu.Menu position="right">
+              <Link route="https://www.linkedin.com/in/ngyaomin/">
+                <a className="item" target="_blank">
+                  <i class="linkedin icon"></i>
+                  My linkedin Profile
+                </a>
+              </Link>
+            </Menu.Menu>
+
 
         </Menu>
         </div>
