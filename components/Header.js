@@ -28,7 +28,7 @@ export default class ThisComponent extends Component {
           </Link>
           <Link route="/">
             <a className="item">
-              <img src="https://icon-icons.com/icons2/1873/PNG/32/dibujo-34_119874.png"></img>
+              <img src="../components/smallSafetyPin.png"></img>
             </a>
           </Link>
           <Link route="/">

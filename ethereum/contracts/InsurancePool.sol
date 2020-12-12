@@ -62,7 +62,6 @@ contract InsurancePool {
 
     function createClaim(string description, uint value, address claimer)
         public restricted paidPremiumRestricted{
-
           // for testing we will let go paidPremiumRestricted in above , becasue test 6 is
           // will not auto make accounts 0 the manager, u will need to do some before each
           // complex which might mess up other test so for just this test we can let go of the

@@ -24,7 +24,7 @@ class ClaimNew extends Component {
     event.preventDefault();
 
     const insurancePool = InsurancePool(this.props.address);
-    const { description, value, claimer } = this.state;
+    const { description, value, claimer} = this.state;
 
     this.setState({ loading: true, errorMessage: '' });
 
