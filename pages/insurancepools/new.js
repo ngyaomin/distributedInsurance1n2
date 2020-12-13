@@ -50,6 +50,7 @@ class InsurancePoolNew extends Component {
         <Uploady destination={{url: "https://fakeuploaddrive.fake"}}>
           <UploadButton/> Upload Supporting Files Here (for demo only real upload server cant afford )
         </Uploady>
+        <br/><br/>
 
         <Form onSubmit={this.onSubmit} error={!!this.state.errorMessage}>
           <Form.Field>
