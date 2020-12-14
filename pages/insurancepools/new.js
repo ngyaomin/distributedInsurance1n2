@@ -44,6 +44,7 @@ class InsurancePoolNew extends Component {
       // if the case of few providers providing same insurance than we will set up a
       // min payout
       // the mechanics will be complex, but for now we keep this simple
+
       <Layout>
         <h3>Create a new insurance pool offer</h3>
 

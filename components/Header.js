@@ -5,7 +5,6 @@ import { Link } from '../routes';
 export default class ThisComponent extends Component {
     constructor(props) {
       super(props)
-
       this.state = {
         copySuccess: false
       }

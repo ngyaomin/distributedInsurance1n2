@@ -5,6 +5,7 @@ import Footer from './Footer';
 
 export default props => {
   return (
+
     <Container>
       <link
         rel="stylesheet"
@@ -14,6 +15,5 @@ export default props => {
       {props.children}
       <Footer />
     </Container>
-
   );
 };
