@@ -3,6 +3,8 @@ import factory from '../ethereum/factory';
 import { Card, Button } from 'semantic-ui-react';
 import Layout from '../components/Layout';
 import { Link } from '../routes';
+import MoveStuffAround from './ticker';
+
 
 class InsurancePoolIndex extends Component {
   // creating a instance of class to get access to
@@ -38,12 +40,15 @@ class InsurancePoolIndex extends Component {
       return <Card.Group items={items} />;
   }
 
+
   render() {
     return (
+
       <Layout>
+      <MoveStuffAround/>
         <div>
         <h7>We are not rasing any money, we are only accepting donations.
-          <br/ > for more info email &nbsp;
+          <br/ > For more info email &nbsp;
           <a href="mailto:NG_YAO_MIN01.PT@ICHAT.SP.EDU.SG">
             <u>givemeyourmoney@cheatyourmoney.io</u>
           </a>

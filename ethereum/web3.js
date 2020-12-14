@@ -1,13 +1,12 @@
 import Web3 from 'web3';
 require('dotenv').config();
-const { infuraLink } = process.env;
-
+const infuraLink = process.env.infuraLink;
 
 let web3;
 
 if (typeof window !== 'undefined' && typeof window.web3 !== 'undefined') {
   web3 = new Web3(window.web3.currentProvider);
-  ethereum.enable();
+//  ethereum.enable();
 } else {
   const provider = new Web3.providers.HttpProvider(
     infuraLink
