@@ -46,6 +46,7 @@ class InsurancePoolNew extends Component {
       // the mechanics will be complex, but for now we keep this simple
 
       <Layout>
+
         <h3>Create a new insurance pool offer</h3>
 
         <Uploady destination={{url: "https://fakeuploaddrive.fake"}}>
@@ -79,10 +80,13 @@ class InsurancePoolNew extends Component {
             loading={this.state.loading}
             primary>Offer a new pool
           </Button>
+          <h5> Pls ensure you have logged in and connect to metamask for this site for transactions </h5>
         </Form>
       </Layout>
     );
   }
 }
+
+
 
 export default InsurancePoolNew;

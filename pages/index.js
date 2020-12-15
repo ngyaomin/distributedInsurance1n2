@@ -29,7 +29,7 @@ class InsurancePoolIndex extends Component {
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <i class="ethereum icon"></i>
               <Link route={`https://rinkeby.etherscan.io/address/${address}`}>
-                <a target="_blank">View in Ether Scan</a>
+                <a target="_blank">View in Etherscan</a>
               </Link>
             </div>
         ),
@@ -53,7 +53,7 @@ class InsurancePoolIndex extends Component {
             <u>givemeyourmoney@cheatyourmoney.io</u>
           </a>
           <br/ >
-          you can also see our latest smart contract
+          You can also see our latest smart contract
           <br/ >
           <a target="_blank" href="https://rinkeby.etherscan.io/address/0xc7A9e3Eac2dA6a5D1Dd5a6058a8b0DC530c5f41A">
           '0xc7A9e3Eac2dA6a5D1Dd5a6058a8b0DC530c5f41A'

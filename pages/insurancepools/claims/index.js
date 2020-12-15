@@ -45,6 +45,7 @@ class ClaimIndex extends Component {
     return (
       <Layout>
         <h3>Claims List</h3>
+        <h5> Pls ensure you have logged in and connect to metamask for this site for transactions </h5>
         <Link route={`/insurancepools/${this.props.address}/claims/new`}>
           <a>
             <Button primary floated="right" style={{ marginBottom: 10 }}>Add a Claim</Button>

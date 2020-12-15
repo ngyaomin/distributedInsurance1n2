@@ -49,6 +49,7 @@ class FundForm extends Component {
         <Button primary loading={this.state.loading} >
           Pay Premium
         </Button>
+        <h5> Pls ensure you have logged in and connect to metamask for this site for transactions </h5>
       </Form>
     )
   }
