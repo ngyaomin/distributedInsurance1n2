@@ -55,8 +55,8 @@ class InsurancePoolIndex extends Component {
           <br/ >
           You can also see our latest smart contract
           <br/ >
-          <a target="_blank" href="https://rinkeby.etherscan.io/address/0xc7A9e3Eac2dA6a5D1Dd5a6058a8b0DC530c5f41A">
-          '0xc7A9e3Eac2dA6a5D1Dd5a6058a8b0DC530c5f41A'
+          <a target="_blank" href="https://rinkeby.etherscan.io/address/0x133474fEA1a837D9706B15B01A54E7BF92493278">
+          '0x133474fEA1a837D9706B15B01A54E7BF92493278'
           </a>
         </h7>
           <h3>Open Insurance Pools</h3>
