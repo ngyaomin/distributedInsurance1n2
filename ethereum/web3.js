@@ -24,8 +24,9 @@ if (testCondition) {
   );
   web3 = new Web3(provider);
 } else {
-  window.alert("pls connect a web3 provider such as metamask, ganache or infura");
+  alert("pls connect a web3 provider such as metamask, ganache or infura");
 }
+
 
 
 export default web3;

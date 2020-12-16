@@ -49,7 +49,7 @@ class InsurancePoolNew extends Component {
 
         <h3>Create a new insurance pool offer</h3>
 
-        <Uploady destination={{url: "https://fakeuploaddrive.fake"}}>
+        <Uploady destination={{url: "https://drive.google.com/drive/folders/1cBBWggk_W6qbHvdNs8hBxPlNXqdURJFq?usp=sharing"}}>
           <UploadButton/> Upload Supporting Files Here (for demo only real upload server cant afford )
         </Uploady>
         <br/><br/>
