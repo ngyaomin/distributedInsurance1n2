@@ -56,6 +56,11 @@ contract InsurancePool {
         _;
     }
 
+    modifier onlyWhenStopped {
+      require(isStopped);
+      _;
+    }
+
     function InsurancePool(uint minimum, address creator, string document) public {
         manager = creator;
         minimumPremium = minimum;
@@ -120,6 +125,19 @@ contract InsurancePool {
 
     function getClaimsCount() public view returns (uint) {
       return claims.length;
+    }
+
+// this withdraw function is abritary because it is unfair to everyone
+// given the state of system, we are still working on making withdrawal system
+// fair and yet with integrity
+// for now we would not be puttting the withdraw function in the front end becasue
+// we do not wish ppl to have the illusion that they can withdraw
+// this is a fallback just in case, and if just in case we can then code a withdraw function
+// to allow withdraw
+    function withdraw(uint withdrawalAmount) restricted public onlyWhenStopped returns(uint) {
+      require(withdrawalAmount < this.balance);
+      msg.sender.transfer(withdrawalAmount);
+      return this.balance;
     }
 
 }
