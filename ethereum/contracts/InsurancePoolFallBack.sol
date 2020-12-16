@@ -49,20 +49,13 @@ contract InsurancePool {
         _;
     }
 
-    bool isStopped = false;
-
-    modifier stoppedInEmergency {
-        require(!isStopped);
-        _;
-    }
-
     function InsurancePool(uint minimum, address creator, string document) public {
         manager = creator;
         minimumPremium = minimum;
         documentHash = document;
     }
 
-    function fund() public fundRestricted stoppedInEmergency payable {
+    function fund() public fundRestricted payable {
         validators[msg.sender] = true;
         validatorsCount++;
     }

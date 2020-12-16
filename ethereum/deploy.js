@@ -2,8 +2,9 @@ const HDWalletProvider = require('truffle-hdwallet-provider');
 const Web3 = require('web3');
 require('dotenv').config();
 const compiledFactory = require('./build/InsurancePoolFactory.json');
-const { infuraLink, walletDetails } = process.env;
-
+const { walletDetails, infuraLink } = process.env;
+//const infuraLink = process.env.infuraLink;
+//const walletDetails = process.env.walletDetails;
 
 const provider = new HDWalletProvider(
   walletDetails, infuraLink
