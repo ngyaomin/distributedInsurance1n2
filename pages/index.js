@@ -24,7 +24,7 @@ class InsurancePoolIndex extends Component {
             <div>
             <i class="hand point right outline icon"></i>
               <Link route={`/insurancepools/${address}`}>
-                <a><b><mark>View Insurance Pool</mark></b></a>
+                <a><b><mark>View this Pool</mark></b></a>
               </Link>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <i class="ethereum icon"></i>
@@ -59,19 +59,18 @@ class InsurancePoolIndex extends Component {
           '0x133474fEA1a837D9706B15B01A54E7BF92493278'
           </a>
         </h7>
-          <h3>Open Insurance Pools</h3>
+          <h3>Open Safety Pins Pools</h3>
 
           <Link route="/insurancepools/new">
             <a>
               <Button
                 floated="right"
-                content= "Create InsurancePool"
+                content= "Create New Pool"
                 icon="add circle" // the icon name is in document, be exact
                 primary
               />
             </a>
           </Link>
-
           {this.renderInsurancePools()}
         </div>
       </Layout>

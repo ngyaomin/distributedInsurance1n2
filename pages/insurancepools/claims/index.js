@@ -58,8 +58,8 @@ class ClaimIndex extends Component {
             <HeaderCell>Description</HeaderCell>
             <HeaderCell>Amount Claim</HeaderCell>
             <HeaderCell>Claimer</HeaderCell>
-            <HeaderCell>Approval Count</HeaderCell>
-            <HeaderCell>Approve</HeaderCell>
+            <HeaderCell>Validated Count</HeaderCell>
+            <HeaderCell>Validate</HeaderCell>
             <HeaderCell>Finalize</HeaderCell>
           </Row>
         </Header>

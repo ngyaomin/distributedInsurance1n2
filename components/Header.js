@@ -48,7 +48,10 @@ export default class ThisComponent extends Component {
           </div>
             <Menu.Menu position="right">
               <Link route="/">
-                <a className="item">Insurance Pools</a>
+                <a className="item">
+                <i class="home icon"></i>
+                Pools Index
+                </a>
               </Link>
               <Link route="/insurancepools/new">
                 <a className="item">+</a>

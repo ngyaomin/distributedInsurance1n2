@@ -34,6 +34,7 @@ class InsurancePoolShow extends Component {
     } = this.props;
 
     const items = [
+
       {
         header: manager,
         meta: 'Address of manager',
@@ -75,7 +76,7 @@ class InsurancePoolShow extends Component {
   render() {
     return (
       <Layout>
-        <h3>Insurance Pool Show</h3>
+        <h3>Pool Details Show</h3>
         <Grid>
           <Grid.Row>
             <Grid.Column width={10}>
