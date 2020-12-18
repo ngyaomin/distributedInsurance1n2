@@ -45,21 +45,21 @@ class InsurancePoolShow extends Component {
       {
         header: minimumPremium,
         meta: 'Minimum Premium in weis',
-        description: 'To be insured you must contribute at least this much wei, also to become validator'
+        description: 'To ensure peace of mind you must contribute at least this much wei, also to become validator'
       },
       {
         header: claimsCount,
         meta: 'Number of Claims',
-        description: 'Number of claims so far on this insurance pools. Claims must be validated by validators'
+        description: 'Number of claims so far on this safety pin pool. Claims must be validated by validators'
       },
       {
         header: validatorsCount,
         meta: 'Number of validators',
-        description: 'Number of ppl that funded this pool and can act as validators'
+        description: 'Number of addresses that funded this pool and can act as validators'
       },
       {
         header: web3.utils.fromWei(balance, 'ether'),
-        meta: 'Insurance Pool Balance(ether)',
+        meta: 'Safety Pin Pool Balance(ether)',
         description: 'How much fund this pool has left'
       },
       {

@@ -36,7 +36,7 @@ class FundForm extends Component {
     return (
       <Form onSubmit={this.onSubmit} error={!!this.state.errorMessage}>
         <Form.Field>
-          <label>Premium to fund</label>
+          <label>Premium to Join</label>
           <Input
             value={this.state.value}
             onChange={event => this.setState({ value: event.target.value })}
