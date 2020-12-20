@@ -7,7 +7,8 @@ const fs = require('fs');
 const instance = new web3.eth.Contract(
   JSON.parse(InsurancePoolFactory.interface),
   //deployedTo
-  '0x133474fEA1a837D9706B15B01A54E7BF92493278'
+  '0xb237d488Da554ffadA191038c31A8d585d2aa1F1'
+  //'0x133474fEA1a837D9706B15B01A54E7BF92493278'
   //'0xc7A9e3Eac2dA6a5D1Dd5a6058a8b0DC530c5f41A' // use this if shit happens
   //'0xC82E40B9053Ae8FEB3851e2D4837601D3029A910'
   //'0x216418ED2c677cbD4f237cdD87603331fe7aC8af'
