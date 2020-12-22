@@ -38,7 +38,7 @@ export default class ThisComponent extends Component {
           </Link>
 
           <button className="item" onClick={() => this.copyCodeToClipboard()}>
-            <b>Donate Eths to >>> Click here to Copy</b>
+            <b>Pls Donate Eths to >>> Click here to Copy</b>
           </button>
           <div className="item">
             <textarea
