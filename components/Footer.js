@@ -26,6 +26,14 @@ export default class ThisComponent extends Component {
               </Link>
             </Menu.Menu>
             <Menu.Menu position="left">
+              <Link route="https://github.com/ngyaomin/safetyPinIPFS">
+                <a className="item" target="_blank">
+                  <i class="github icon"></i>
+                  Safety Pin IPFS GitHub
+                </a>
+              </Link>
+            </Menu.Menu>
+            <Menu.Menu position="left">
               <Link route="https://drive.google.com/file/d/1_d3yFTCR20hL_GiWs1Zf45bnTTt1uENl/view?usp=sharing">
                 <a className="item" target="_blank">
                   <i class="google drive icon"></i>
