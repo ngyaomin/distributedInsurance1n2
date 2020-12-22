@@ -33,6 +33,14 @@ export default class ThisComponent extends Component {
                 </a>
               </Link>
             </Menu.Menu>
+            <Menu.Menu position="left">
+              <Link route="https://ipfs.infura.io/ipfs/QmWKMFijpuFk5Yt8bGP5vGshAtKTNjbKiqPMR8Wm5YJfdq">
+                <a className="item" target="_blank">
+                  <i class="download icon"></i>
+                  Link to PowerPoint Presentation on IPFS
+                </a>
+              </Link>
+            </Menu.Menu>
             <Menu.Menu position="right">
               <Link route="https://www.linkedin.com/in/ngyaomin/">
                 <a className="item" target="_blank">

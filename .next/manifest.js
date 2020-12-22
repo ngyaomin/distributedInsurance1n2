@@ -89,7 +89,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "ab9b19b2e9057be755ef"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "6259ac56c10aa63ed0c6"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -754,7 +754,7 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "" + ({"0":"main.js","1":"bundles/pages/_error.js","2":"bundles/pages/_document.js","3":"commons","6":"bundles/pages/insurancepools/claims/index.js","8":"bundles/pages/insurancepools/claims/new.js"}[chunkId]||chunkId) + "";
+/******/ 		script.src = __webpack_require__.p + "" + ({"0":"main.js","1":"bundles/pages/_error.js","2":"bundles/pages/_document.js","3":"commons","5":"bundles/pages/index.js"}[chunkId]||chunkId) + "";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
@@ -804,7 +804,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/_next/a84e9612-98d7-4a4f-b755-6d9a9cdc524f/webpack/";
+/******/ 	__webpack_require__.p = "/_next/86758a8e-ba04-4f32-abb8-c51d02e224a8/webpack/";
 /******/
 /******/ 	// on error function for async loading
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
