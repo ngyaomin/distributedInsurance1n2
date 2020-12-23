@@ -42,10 +42,10 @@ export default class ThisComponent extends Component {
               </Link>
             </Menu.Menu>
             <Menu.Menu position="left">
-              <Link route="https://ipfs.infura.io/ipfs/QmWKMFijpuFk5Yt8bGP5vGshAtKTNjbKiqPMR8Wm5YJfdq">
+              <Link route="https://ipfs.infura.io/ipfs/QmPjkaAcAp3Hy7YBAkqgEWzcCLxFKePYJVaHHkuqeaT9bi">
                 <a className="item" target="_blank">
                   <i class="download icon"></i>
-                  Link to PowerPoint Presentation on IPFS
+                  Download PowerPoint Presentation on IPFS
                 </a>
               </Link>
             </Menu.Menu>
